@@ -15,6 +15,17 @@ func NewMux(ctx context.Context, cfg *config.Config) (http.Handler, func(), erro
 		fmt.Fprintln(w, "HealthCheck: OK")
 	})
 
+	/* TODO
+	// ユーザー認証
+	r.Post("/register", ~.ServeHTTP)
+	r.Post("/login", ~.ServeHTTP)
+
+	// TODOリスト
+	r.Get("/todos", ~.ServeHTTP)
+	r.Get("/todos/{id}", ~.ServeHTTP)
+	r.Post("/todos/{id}", ~.ServeHTTP)
+	*/
+
 	cleanup := func() {
 	}
 
